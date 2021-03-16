@@ -1,11 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title id="judul">
-      Design Game
+      Design Game - Hendrik Christanto (C14180140)
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  
+
+  <div id="game">
+    <br/>
+    <ion-label>Masukkan angka (1-5): </ion-label>
+    <ion-input id="input" type="text" [(ngModel)]="tebak"></ion-input>
+    <br/>
+    <ion-button (click)="cekSama()">Tebak</ion-button>
+    <ion-img id="correct_image" [src]="alamat"></ion-img>
+  </div>
 </ion-content>
